@@ -3,9 +3,13 @@
   "controllerPathGlobs": ["./src/**/*.controller.ts"],
   "spec": {
     "outputDirectory": "./src/routes",
-    "specVersion": 3
+    "specVersion": 3,
+    "securityDefinitions": {
+      "Bearer": { "type": "apiKey", "name": "Authorization", "in": "header" }
+    }
   },
   "routes": {
+    "authenticationModule": "./src/modules/auth/authentication.ts",
     "routesDir": "./src/routes"
   }
 

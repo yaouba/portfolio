@@ -2,7 +2,7 @@ declare namespace Express {
 	export interface Request {
 		user: {
 			id: ObjectId;
-			roles: [string];
+			roles: string[];
 		};
 	}
 	export interface Response {
